@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+
+
 export default function AssignmentTile({ assignment }) {
   console.log(assignment);
+  
 
   return (
     <>
@@ -16,7 +19,7 @@ export default function AssignmentTile({ assignment }) {
           }}
           state={{assObj:assignment}}
         >
-          <button type="button">View Assignment</button>
+          <button type="button" >View Assignment</button>
         </Link>
       </div>
     </>

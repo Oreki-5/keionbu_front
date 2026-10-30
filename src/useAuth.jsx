@@ -4,12 +4,21 @@ const authContext = React.createContext();
 
 function useAuth() {
   const [authed, setAuthed] = React.useState(false);
+  const [token, setToken] = React.useState("");
 
   return {
     authed,
+    token,
     login() {
       return new Promise((res) => {
         setAuthed(true);
+        setToken("tpkenqwr");
+        res();
+      });
+    },
+    testFunc() {
+      return new Promise((res) => {
+        setToken("horarer");
         res();
       });
     },

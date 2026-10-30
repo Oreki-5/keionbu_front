@@ -1,25 +1,27 @@
 import { useParams, useLocation } from "react-router-dom";
-
+import useAuth from "../useAuth";
 export default function AssignmentPage({ qwer }) {
   const ids = useParams();
   console.log();
   const location = useLocation();
   const assignment = location.state.assObj;
-  // console.log(assObj);
-  
+  const { token } = useAuth();
+
+  const handleDownload = () => {};
+
+  const handleSubmit = () => {};
 
   return (
     <>
       <div>Go back button</div>
 
-      <div style={{ }}>
+      <div style={{}}>
         {/* main layout */}
         <div>
           {/* Image */}
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBR2oFFbvNd0HAeenhA0wtJ31E4RE5z81pfR99Rs8d4pUxR5vsKCnahro&s=10"
             alt=""
-            srcset=""
           />
         </div>
         <div>
